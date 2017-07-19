@@ -25,6 +25,7 @@
 
 .mainComp{
     display:flex;
+    flex-direction: column;
 
 
 }
@@ -49,6 +50,7 @@
 
 }
 .book{
+    flex-direction: column;
      flex:1 0 10%;
     /*flex-direction: column;
     flex-wrap: wrap;
