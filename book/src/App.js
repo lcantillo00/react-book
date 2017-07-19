@@ -64,7 +64,7 @@ fetchBooks(searchTerm){
 
 
         return(
-                <div className="mainComp">
+                <div className="containter">
 
                         <div className="searchInput">
                             <Search
@@ -89,8 +89,8 @@ fetchBooks(searchTerm){
                                         <li key={author}>{author}</li>
                                     )}
                                 </ul>
-                                {book.searchInfo ? Parser(book.searchInfo.textSnippet):
-                                 null}
+                                {/* {book.searchInfo ? Parser(book.searchInfo.textSnippet):
+                                 null} */}
 
 
 
