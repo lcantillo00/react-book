@@ -1,8 +1,7 @@
 import React,{ Component} from 'react';
-// import Parser from 'html-react-parser';
 import './App.css';
 const DEFAULT_QUERY='redux';
-const DEFAULT_RESULT=13;
+const DEFAULT_RESULT= 13;
 
 const PATH_BASE='https://www.googleapis.com/books/v1';
 const PATH_SEARCH='/volumes';
@@ -91,6 +90,7 @@ fetchBooks(searchTerm){
                                     </ul>
                                   </div>
                                 </div>
+
                         </div>
 
                     )}
@@ -101,7 +101,6 @@ fetchBooks(searchTerm){
 
             );
     }
-
 
 }
 
