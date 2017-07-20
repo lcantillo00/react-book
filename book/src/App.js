@@ -1,5 +1,4 @@
 import React,{ Component} from 'react';
-// import Parser from 'html-react-parser';
 import './App.css';
 const DEFAULT_QUERY='redux';
 const DEFAULT_RESULT=13;
@@ -90,19 +89,9 @@ fetchBooks(searchTerm){
                                         )}
                                     </ul>
                                   </div>
-                                  {/* <p>{book.volumeInfo.title}</p>
-                                  <p>{book.volumeInfo.subtitle}</p>
-                                  <p>{book.accessInfo.pdf.isAvailable}</p> */}
                                 </div>
 
-
-                                {/* {book.searchInfo ? Parser(book.searchInfo.textSnippet):
-                                 null} */}
-
-
-
                         </div>
-
 
                     )}
                     </div>
@@ -112,7 +101,6 @@ fetchBooks(searchTerm){
 
             );
     }
-
 
 }
 
