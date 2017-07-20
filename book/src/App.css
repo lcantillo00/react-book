@@ -1,3 +1,4 @@
+
 body{
 
   background-image: url("https://fliphtml5.com/examples/dci/files/extfile/bg.jpg");
@@ -31,7 +32,21 @@ body{
 
 li {
   list-style: none;
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
 }
+.mymain{
+    display: flex;
+
+}
+.mysecond{
+    
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+
 
 /*img:hover{
     -webkit-transform: scale(1.5);
@@ -45,7 +60,13 @@ img{
 
 input{
   margin: 1rem;
+
+
 }
+.book{
+    margin: 20px;
+    text-align: center;
+
 
 .overlay {
   display: flex;
@@ -76,4 +97,6 @@ input{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+
+
 }
