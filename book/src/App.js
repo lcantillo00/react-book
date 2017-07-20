@@ -1,7 +1,7 @@
 import React,{ Component} from 'react';
 import './App.css';
 const DEFAULT_QUERY='redux';
-const DEFAULT_RESULT=13;
+const DEFAULT_RESULT= 13;
 
 const PATH_BASE='https://www.googleapis.com/books/v1';
 const PATH_SEARCH='/volumes';
