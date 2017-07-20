@@ -32,6 +32,7 @@ body{
 
 li {
   list-style: none;
+}
 
 .container{
     max-width: 1200px;
@@ -42,16 +43,12 @@ li {
 
 }
 .mysecond{
-    
+
     display: flex;
     flex-wrap: wrap;
    justify-content: space-around;
 
-
-/*img:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5)
-}*/
+}
 img{
   width: 10rem;
   height: auto;
@@ -66,10 +63,10 @@ input{
 .book{
     margin: 20px;
     text-align: center;
-
+}
 
 .overlay {
-  display: flex;
+  /*display: flex;*/
   position: absolute;
   bottom: 0;
   left: 0;
@@ -87,16 +84,14 @@ input{
 }
 
 .text {
-  display: flex;
-  /*white-space: nowrap;*/
+  /*display: flex;*/
+  text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-
-
 }
