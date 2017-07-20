@@ -1,5 +1,5 @@
 import React,{ Component} from 'react';
-import Parser from 'html-react-parser';
+// import Parser from 'html-react-parser';
 import './App.css';
 const DEFAULT_QUERY='redux';
 const DEFAULT_RESULT=13;
@@ -67,13 +67,13 @@ fetchBooks(searchTerm){
                 <div className="containter">
 
                         <div className="searchInput">
+                          <h1>My Book Search!!</h1>
                             <Search
                                 onChange={this.onSearchChange}
                                 onSubmit={this.onSearchSubmit}
                                 >
                                 Search
                               </Search>
-                              <h1>My Book Search!!</h1>
                         </div>
                     <div className="mymain">
                         <div className="mysecond">
@@ -81,21 +81,17 @@ fetchBooks(searchTerm){
                         {data.items.map(book=>
                             <div key={book.id} className="book">
                                 <img src={book.volumeInfo.imageLinks.smallThumbnail} alt=""/>
-                                <h3>{book.volumeInfo.title}</h3>
-                                <span>{book.volumeInfo.subtitle}</span>
-                                <p>{book.accessInfo.pdf.isAvailable}</p>
-                                <ul>
-                                    {book.volumeInfo.authors.map(author=>
-                                        <li key={author}>{author}</li>
-                                    )}
-                                </ul>
-                                {/* {book.searchInfo ? Parser(book.searchInfo.textSnippet):
-                                 null} */}
+                                <div className="overlay">
 
-
-
+                                    <div className="text">
+                                    <ul>
+                                        {book.volumeInfo.authors.map(author=>
+                                            <li key={author}>{author}</li>
+                                        )}
+                                    </ul>
+                                  </div>
+                                </div>
                         </div>
-
 
                     )}
                     </div>
