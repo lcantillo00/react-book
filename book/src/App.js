@@ -1,4 +1,5 @@
 import React,{ Component} from 'react';
+import Parser from 'html-react-parser';
 import './App.css';
 const DEFAULT_QUERY='redux';
 const DEFAULT_RESULT= 13;
@@ -78,6 +79,7 @@ fetchBooks(searchTerm){
                         <div className="mysecond">
 
                         {data.items.map(book=>
+                        <div className="book">
                             <div key={book.id} className="book">
                                 <img src={book.volumeInfo.imageLinks.smallThumbnail} alt=""/>
                                 <div className="overlay">
@@ -91,7 +93,18 @@ fetchBooks(searchTerm){
                                   </div>
                                 </div>
 
+                                {/* {book.searchInfo ? Parser(book.searchInfo.textSnippet):
+                                 null} */}
+                                {/* si quiero conectar al api algun elemente que aparece a veces o no  */}
+                                {/* <a href={book.buyLink ? Parser(book.buyLink):
+                                    null}></a> */}
+
                         </div>
+                        <div className="bttn">
+                         <a href={book.volumeInfo.previewLink}>Buy here!!!</a>
+                        </div>
+                    </div>
+
 
                     )}
                     </div>
