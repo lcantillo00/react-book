@@ -101,7 +101,7 @@ fetchBooks(searchTerm){
 
                         </div>
                         <div className="bttn">
-                         <a href={book.volumeInfo.previewLink}>Buy here!!!</a>
+                         <a target="_blanck" href={book.volumeInfo.previewLink}>Buy here!!!</a>
                         </div>
                     </div>
 
